@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+body, html {
+  height: 850px;
+  margin: 0;
+  font: "Bebas Neue", sans-serif;
+  color: #fff;
+  background-color: #010101;
+}
+
+.container{
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.parallax {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.caption .border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+.video {
+  background-color: #010101;
+  text-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  background: url('../img/01.png')no-repeat;
+  background-position: 78% 50%;
+  transition: background 10s ease;
+}
+
+.position-nav-menu{
+  display: flex;
+  position: fixed;
+}
+
+.menu-list{
+  display: flex;
+}
+
+.menu-list-item{
+  display: block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: 0.1s ease;
+}
+
+.menu-list-item:hover{
+  transition: 0.1s ease;
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3); 
+  transform: scale(1.3);
+}
+
+.menu-list-item:not(:last-child){
+  margin-right: 60px;
+}
+
+.nav-logo{
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.burger{
+  display: block;
+  background: url('../img/burger.svg')no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-right: 120px;
+  cursor: pointer;
+}
+
+.inst{
+  background: url('../img/inst.svg')no-repeat;
+}
+
+.medium{
+  background: url('../img/medium.svg')no-repeat;
+}
+
+.dribbble{
+  background: url('../img/dribbble.svg')no-repeat;
+}
+
+.behance{
+  background: url('../img/behance.svg')no-repeat;
+}
+
+.header-main-caption{
+  font-size: 65px;
+}
+
+#position-caption{
+  margin-top: 250px;
+}
+
+#share{
+  position: absolute;
+  right: 170px;
+  bottom: 10%;
+}
+
+.vertical-text{
+  transform: rotate(90deg);
+  z-index: 90;
+  color: #fff;
+}
+
+.vertical-text::after{
+  content: '';
+  display: block;
+  background: url('../img/mouse.svg')no-repeat;
+  width: 20px;
+  height: 25px;
+  z-index: 90;
+  transform: rotate(90deg);
+  position: absolute;
+  left: 70px;
+  bottom: -3px;
+}
+
+#image-scroll{
+  position: absolute;
+  left: 47%;
+  bottom: 18%;
+}
+
+.shere-link{
+  display: block;
+  background: url('../img/share.svg')no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+
+.second-caption-scroll{
+  position: absolute;
+  top: 75%;
+  left: 35%;
+  text-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  color: #fff;
+}
+
+.main-caption{
+  font-size: 100px;
+}
+
+.subcaption{
+  font-weight: 600px;
+  font-size: 15px;
+  letter-spacing: 3px;
+}
