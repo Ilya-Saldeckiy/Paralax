@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Parallax Effect</title>
+  <link href="style.css" rel="stylesheet">
+  <script src="https://www.rudebox.org.ua/js/jquery-3.3.1.js"></script>
+  <script src="main.js"></script>
+</head>
+<body>
+
+  <div class="parallax" id="parallax-1" data-image-src="img/Background.png">
+    <div class="container">
+    <nav class="position-nav-menu" id="firstScroll">
+      <div class="burger">
+      </div>
+      <ul class="menu-list">
+        <li class="menu-list-item"><a href="#">Explore</a></li>
+        <li class="menu-list-item"><a href="#">Store</a></li>
+        <li class="nav-logo"><img src="img/Mountain Logo.png" alt="logo"></li>
+        <li class="menu-list-item inst"><a href="#"></a></li>
+        <li class="menu-list-item medium"><a href="#"></a></li>
+        <li class="menu-list-item dribbble"><a href="#"></a></li>
+        <li class="menu-list-item behance"><a href="#"></a></li>
+      </ul>
+    </nav>
+    <div id="position-caption">
+      <h2 class="header-main-caption">Nepal Mountains</h2>
+      <h3 class="subcaption">Visit the most beautiful mountains in the world</h3>
+    </div>
+    <div id="share">
+      <a href="#" class="shere-link"></a>
+    </div>
+    <div id="image-scroll">
+      <p class="vertical-text">SCROLL</p>
+    </div>
+  </div>
+  </div>
+
+  <div class="video">
+    <div class="second-caption-scroll" id="second-scroll">
+      <h1 class="main-caption" id="caption">Everest</h1>
+      <h2 class="subcaption">The highest mountain in the world</h2>
+    </div>
+    <video class="animate-video" width="600" height="300" controls="controls" poster="img/video.jpg"></video>
+  </div>
+  <script>
+    function consoleBG() {
+  if ($(window).scrollTop() < 200) {
+    $('#position-caption').css('display', 'block') && $('#image-scroll').css('display', 'block') && $('#share').css('display', 'block') && $('#second-scroll').css('display', 'none') && $('#video').css('display', 'none');
+  } else {
+    $('#position-caption').css('display', 'none') && $('#image-scroll').css('display', 'none') && $('#share').css('display', 'none') && $('#second-scroll').css('display', 'block').fadeIn(3000) && $('#video').css('display', 'block');
+  }
+}
+consoleBG();
+
+$(window).scroll(function() {
+  consoleBG();
+});
+  </script>
+</body>
+
+</html>
