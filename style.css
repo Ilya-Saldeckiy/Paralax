@@ -91,7 +91,7 @@ body, html {
 
 .burger{
   display: block;
-  background: url('/img/Menu.svg')no-repeat;
+  background: url('/img/burger.png')no-repeat;
   width: 20px;
   height: 20px;
   margin-right: 120px;
@@ -99,19 +99,19 @@ body, html {
 }
 
 .inst{
-  background: url('/img/inst.svg')no-repeat;
+  background: url('/img/inst.png')no-repeat;
 }
 
 .medium{
-  background: url('/img/medium.svg')no-repeat;
+  background: url('/img/medium.png')no-repeat;
 }
 
 .dribbble{
-  background: url('/img/Dribbble.svg')no-repeat;
+  background: url('/img/dribbble.png')no-repeat;
 }
 
 .behance{
-  background: url('/img/behance.svg')no-repeat;
+  background: url('/img/behance.png')no-repeat;
 }
 
 .header-main-caption{
@@ -137,7 +137,7 @@ body, html {
 .vertical-text::after{
   content: '';
   display: block;
-  background: url('/img/Vector.svg')no-repeat;
+  background: url('/img/mouse.png')no-repeat;
   width: 20px;
   height: 25px;
   z-index: 90;
@@ -155,7 +155,7 @@ body, html {
 
 .shere-link{
   display: block;
-  background: url('/img/Share.svg')no-repeat;
+  background: url('/img/share.png')no-repeat;
   width: 20px;
   height: 20px;
 }
