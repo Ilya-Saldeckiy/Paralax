@@ -15,7 +15,7 @@ a{
 }
 
 body, html {
-  height: 850px;
+  height: 100%;
   margin: 0;
   font: "Bebas Neue", sans-serif;
   color: #fff;
